@@ -9,8 +9,9 @@
 
   <link rel="manifest" href="site.webmanifest">
   
-  <!-- Länk till Javascript avseende drop-down meny -->
-  <script type="text/javascript" src="js/toppnav.js"></script>
+  <!-- Länk till Javascript -->
+  <script src="js/toppnav.js"></script>
+  <script src="js/slider.js"></script>
   
   <!-- Länkar till extern CSS inkl fallback -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -38,12 +39,12 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+<div class="wrapper">
 
-
-<header>
+<header id="mobileHeader">
 <!-- Top Navigation Menu -->
 <nav class="topnav">
-    <a href="#home" class="active"><img id="logoMobil" src="./img/JL_Massage_logo_mobile.png" alt="Företagslogotyp"></a>
+    <a href="#home" class="activeBanner"><img id="logoMobil" src="./img/JL_Massage_logo_mobile.png" alt="Företagslogotyp"></a>
     <p id="toppnavText">JL Massage</p>
     <!-- Navigation links (hidden by default) -->
     <ul id="myLinks">
@@ -58,12 +59,79 @@
       <i class="fa fa-bars"></i>
     </a>
   </nav>
-
 </header>
 
 
+<main>
+  <section id="mainSlider">
+    <h1 id="sliderRubrik">Välkommen till oss på JL Massage!</h1>
+    
+    <p id="sliderSlogan">Idrottsmassage och friskvård i Svenljunga</p>
+    
+      <div class="slideshow-container">
+      
+        <div id="slide1" class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <a href="#"><img class="slideBilder" src="img/massageansikte.jpg" alt="ansiktsmassage"></a>
+          <div class="text">Boka ett avbrott i vardagen</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <a href="#"><img class="slideBilder" src="img/massageNeck.jpg" alt="massage av nacke"></a>
+          <div class="text">Tips för dig med ont i nacken</div>
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <a href="#"><img class="slideBilder" src="img/massagestenar.jpg" alt="varma stenar på en rygg"></a>
+          <div class="text">Rena kropp och själ</div>
+        </div>
+      
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <div class="knappar">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+
+  </section>
+
+  <article class="erbjudandeContainer ">
+    <h2 id="erbjudandeRubrik">Populära behandlingar</h2>
+    
+    
+    
+    <section class="box erbjudande" id="e1">
+      <h3 class="eRubrik">Raindropmassage</h3>
+      <a href="#"><img class="eBilder" src="img/oljor.jpg" alt="Eteriska oljor"></a>
+      <button class="eKnapp">Läs mer</button>
+    </section>
+    
+    <section class="box erbjudande" id="e2">
+      <h3 class="eRubrik">Bindvävsmassage</h3>
+      <img class="eBilder" src="img/bindvavsmassage.jpg" alt="Bindvävsmassage">
+      <button class="eKnapp">Läs mer</button>
+    </section>
+    
+    <section class="box erbjudande" id="e3">
+      <h3 class="eRubrik">Helkroppsmassage</h3>
+      <img class="eBilder" src="img/helkropp.jpg" alt="Helkroppsmassage">
+      <button class="eKnapp">Läs mer</button>
+    </section>
+
+  </article>
+
+</main>
 
 
+<footer>
+&copy T.Hjelm 2019
+</footer>
 
 
 
@@ -80,6 +148,7 @@
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set','transport','beacon'); ga('send', 'pageview')
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
+</div>
 </body>
 
 </html>
