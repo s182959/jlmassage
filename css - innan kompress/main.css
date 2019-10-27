@@ -376,7 +376,7 @@ input[type=submit]:hover {
 
 #toppnavText {
   position: absolute;
-  top: 35%;
+  top: 10%;
   left:130px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
@@ -646,7 +646,7 @@ input[type=submit]:hover {
 {
   #toppnavText {
     font-size:1.2em;
-    top: 40%;
+    top: 12%;
     
   }
 }
