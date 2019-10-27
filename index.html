@@ -83,7 +83,7 @@
           <li class="desktopA"><a class="eKnapp" href="#dermatologi" title="Klicka för att komma til 3d dermatologi">3D dermatologi</a></li>
           <li class="desktopA"><a class="eKnapp" href="#boka"  title="Klicka för att komma till bokning">Boka behandling</a></li>
           <li class="desktopA"><a class="eKnapp" href="#omoss" title="Klicka för att komma till om oss">Om oss</a></li>
-          <li class="desktopA"><a class="eKnapp" href="#kontakt"  title="Klicka för kontakt">Kontakt>Kontakt</a></li>
+          <li class="desktopA"><a class="eKnapp" href="#kontakt"  title="Klicka för kontakt">Kontakt</a></li>
         </ul>
       </nav>
 
@@ -295,7 +295,7 @@
       </p>
       <table class="tg pText arial">
         <tr>
-          <th class="tg-wesv arial bold">Öppettider:</span></th>
+          <th class="tg-wesv arial bold">Öppettider:
           <th class="tg-0pky"></th>
         </tr>
         <tr>
@@ -313,38 +313,38 @@
       <div id="formWrap">
         <!-- Form ej funktionell, saknar ASP -->
         <form action="#">
-
+            <label for="lname">Ditt förnamn</label>
           <input type="text" id="fname" name="firstname" placeholder="Förnamn..">
+          
+          
           <label for="fname">Ditt efternamn</label>
-
-
           <input type="text" id="lname" name="lastname" placeholder="Efternamn..">
-          <label for="lname">Ditt förnamn</label>
+          
 
-
-          <input type="text" id="phone" name="phone" placeholder="Ditt mobilnummer..">
           <label for="phone">Ditt telefonnummer</label>
+          <input type="text" id="phone" name="phone" placeholder="Ditt mobilnummer..">
+          
 
-
-          <input type="text" id="email" name="mail" placeholder="exempel@exempel.se..">
           <label for="email">Ditt mailadress</label>
+          <input type="text" id="email" name="mail" placeholder="exempel@exempel.se..">
+          
 
-
+          <label for="question">Skriv din fråga</label>
           <input type="text" id="question" name="question" placeholder="Fråga..">
-          <label for="question">Din fråga</label>
+          
 
-
+          <label for="fraga">Vad gäller din fråga?</label>
           <select id="fraga" name="fraga">
-            <label for="fraga">Vad gäller din fråga?</label>
-            <option value="bokning">Bokning</option>
-            <option value="behandling">Fåga om behandling</option>
-            <option value="radgivning">Rådgivning</option>
-            <option value="all">Osäker</option>
+            
+            <option value="bokning" title="bokning">Bokning</option>
+            <option value="behandling" title="behandling">Fåga om behandling</option>
+            <option value="radgivning" title="rådgivning">Rådgivning</option>
+            <option value="all" title="Osäker">Osäker</option>
           </select>
 
-          <label for="submut"> Skicka in ditt fråga
-            <input type="submit" value="Skicka">
-          </label>
+          <!-- <label for="submit"> Skicka in din fråga</label> -->
+            <input type="submit" value="Skicka" title="Klicka för att skicka">
+          
         </form>
 
       </div>
