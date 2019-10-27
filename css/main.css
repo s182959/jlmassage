@@ -100,14 +100,22 @@ textarea {
 
 
    
+/*============ Wrappers, boxar och sidsektioner ============*/
 
-/*============ Wrapper och boxar ============*/
 
 .wrapper {
   display:grid;
   margin:auto;
   max-width: 80rem;
  
+}
+
+.subWrap {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap:5px;
+
+
 }
 
 .box { 
@@ -121,26 +129,49 @@ textarea {
   
 }
 
-.buttonCenter {
-  display:flex;
-  justify-content: center;
-}
+
 
 main {
   margin-top:7rem;
 }
 
-/* .socUl {
-  display: none
-} */
 
 
-/*============ Undersidor ============*/
+/*============ Knappar ============*/
 
-.padding-top {
-   
-    padding-top:18rem  
+.buttonCenter {
+  display:flex;
+  justify-content: center;
 }
+
+.eKnapp {
+  background-color:#42851c;
+  color:white;
+ 
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 0.5rem;
+
+  display:inline-block;
+  padding:0.2rem;
+  margin:0 0.3em 0.3em 0;
+  border-radius:0.12em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  text-align:center;
+  transition: all 0.2s; 
+}
+
+  .eKnapp:hover{
+  color:#000000;
+  background-color:#FFFFFF;
+  cursor: pointer;
+  border:0.1em solid black;
+  }
+
 
 .bokaKnapp {
   background-color:#42851c;
@@ -177,11 +208,8 @@ main {
   color:white;
   font-size: 1rem;
   text-align: center;
-  /* margin-bottom: 0.5rem; */
   display:block;
-  padding:0.2rem;
-  /* border:0.1em solid #FFFFFF; */
-  /* margin:0.3rem; */
+  padding:0.8rem;
   border-radius:0.12em;
   box-sizing: border-box;
   text-decoration:none;
@@ -191,15 +219,11 @@ main {
   transition: all 0.2s;  
   max-width: 80rem;
   margin-bottom:1rem;
-
-
-    position:fixed;
-    bottom:0;
-    left:0;
-    width: 6rem;
-    overflow: hidden;
-    z-index: 1;
-
+  position:fixed;
+  bottom:0;
+  left:0;
+  overflow: hidden;
+  z-index: 1;
 }
 
 .tillTopp:hover{
@@ -209,12 +233,9 @@ main {
   border:0.1em solid black;
   }
 
-.subWrap {
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap:30px;
 
-}
+
+/*======= Generella textklasser ========*/
 
 .gronText {
   color:#42851c;
@@ -226,6 +247,7 @@ main {
 .pText {
   padding-left:2.3rem;
   padding-right:2.3rem;
+  
 }
 
 .arial {
@@ -236,7 +258,18 @@ main {
   font-weight: 600;
 }
 
-/*======= Behandlingar ========*/
+.italic {
+  font-style: italic;
+}
+
+/*============ Undersidor generellt ============*/
+
+.padding-top {
+   
+  padding-top:18rem  
+}
+
+/*======= Behandlingar sida ========*/
 
 
 
@@ -244,43 +277,31 @@ main {
   margin-left: 2.3rem;
 }
 
-/*======= Dermatologi ========*/
+/*======= Dermatologisida ========*/
 
 
 
-#dermaText {
-  padding-left:2.3rem;
-  padding-right: 2.3rem;
- }
-/*======= Bokabehandling ========*/
-
-
+/*======= Bokabehandlingssida ========*/
 
 #bokaSida {
   width:100%;
   height:40rem;
-
 }
 
-/*======= Om oss ========*/
-
-
- #omText {
- padding:2.3rem;
- 
+#bokaWrap {
+  padding:2.3rem;
 }
+
+/*======= Om oss sida ========*/
 
  #personalBild {
-
+  
   padding:0.1rem;
-  max-width: 20%
+  max-width: 20%;
+
 }  
 
- #bTextVd {
-  font-style: italic;
-} 
-
-/*======= Kontakt ========*/
+/*======= Kontaktsida ========*/
 
 #karta {
   width:100%; 
@@ -291,9 +312,23 @@ main {
   padding-right:2.3rem;
 }
 
+.kontakt {
+  padding-top:2rem;
+}
+
 
 .tg {
   margin-left:2.3rem;
+}
+
+/*======= Kontaktformulär ========*/
+
+#formWrap {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 1rem;
+  margin-left:2.3rem;
+  margin-right: 2.3rem;
 }
 
 input[type=text], select {
@@ -331,13 +366,7 @@ input[type=submit]:hover {
 }
 
 
-#formWrap {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 1rem;
-  margin-left:2.3rem;
-  margin-right: 2.3rem;
-}
+
 
 
 /*============ Toppnav  ============*/
@@ -466,6 +495,8 @@ input[type=submit]:hover {
   max-height: 600px;
   object-fit: cover;
   overflow:hidden;
+  /* padding-left:2.3rem;
+  padding-right: 2.3rem; */
 }
 
 .mySlides {
@@ -582,33 +613,7 @@ input[type=submit]:hover {
   text-align:center; 
 } 
 
-.eKnapp {
-  background-color:#42851c;
-  color:white;
- 
-  font-size: 1rem;
-  text-align: center;
-  margin-bottom: 0.5rem;
 
-  display:inline-block;
-  padding:0.2rem;
-  margin:0 0.3em 0.3em 0;
-  border-radius:0.12em;
-  box-sizing: border-box;
-  text-decoration:none;
-  font-family:Arial, Helvetica, sans-serif;
-  font-weight:300;
-  color:#FFFFFF;
-  text-align:center;
-  transition: all 0.2s; 
-}
-
-  .eKnapp:hover{
-  color:#000000;
-  background-color:#FFFFFF;
-  cursor: pointer;
-  border:0.1em solid black;
-  }
 
 .eBilder {
 
@@ -619,8 +624,7 @@ input[type=submit]:hover {
   margin-left: auto;
   margin-right: auto;
   padding-bottom:0.5rem;
-  border-radius: 20px;
-  
+  border-radius: 20px;  
 }
 
 
@@ -642,6 +646,10 @@ input[type=submit]:hover {
 
 
 /*============ MEDIA QUERIES ============*/
+
+
+/*======== Snap 355 mindre rubriktext =========*/
+
 @media (max-width: 355px)
 {
   #toppnavText {
@@ -655,6 +663,8 @@ input[type=submit]:hover {
 /* ==================Ipad size och mindre================*/
 @media (min-width: 740px) 
 {
+
+
 #siteTop {
   padding-top:4rem;
 }
@@ -697,19 +707,11 @@ input[type=submit]:hover {
   
 }
 
-
-/* .socLi {
-  position: absolute;
-  right:20px;
-  top:0;
-} */
-
 .socIcon {
   width:40px;
  /* display:block */
  
 }
-
 
 .eBilder {
   max-width: 100%;
@@ -720,8 +722,8 @@ input[type=submit]:hover {
   padding-bottom:0.5rem;
   border-radius: 20px;
 }
-.padding-top {
-   
+
+.padding-top {  
   padding-top:10rem  
 }
 
@@ -818,9 +820,12 @@ input[type=submit]:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /*============ Bortkommenterat, används i kod ovanför ============*/
+
+
+/* @media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition 
+} */
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
