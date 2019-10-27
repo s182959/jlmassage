@@ -164,6 +164,7 @@ main {
   padding:0.2rem;
   border:0.1em solid #FFFFFF;
   margin-left:2.3rem;
+  margin-top:1rem;
   border-radius:0.12em;
   box-sizing: border-box;
   text-decoration:none;
@@ -258,6 +259,10 @@ main {
 
 .arial {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.bold{
+  font-weight: 600;
 }
 
 /*======= Behandlingar ========*/
@@ -400,7 +405,7 @@ input[type=submit]:hover {
 
 #toppnavText {
   position: absolute;
-  top: -10px;
+  top: 10%;
   left:130px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 2rem;
@@ -670,7 +675,7 @@ input[type=submit]:hover {
 {
   #toppnavText {
     font-size:1.2em;
-    top: 5px;
+    top: 12%;
     
   }
 }
