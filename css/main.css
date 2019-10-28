@@ -172,6 +172,33 @@ main {
   border:0.1em solid black;
   }
 
+  .eKnapp2 {
+    background-color:#1c4285;
+    color:white;
+   
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  
+    display:inline-block;
+    padding:0.2rem;
+    margin:0 0.3em 0.3em 0;
+    border-radius:0.12em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-align:center;
+    transition: all 0.2s; 
+  }
+  .eKnapp2:hover{
+    color:#000000;
+    background-color:#FFFFFF;
+    cursor: pointer;
+    border:0.1em solid black;
+    }
+
 
 .bokaKnapp {
   background-color:#42851c;
@@ -661,7 +688,7 @@ input[type=submit]:hover {
 
 
 /* ==================Ipad size och mindre================*/
-@media (min-width: 740px) 
+@media (min-width: 840px) 
 {
 
 
@@ -684,8 +711,10 @@ input[type=submit]:hover {
 #desktopLista {
   position: absolute;
   bottom:0%;
-  left: 30%;
+  left: 25%;
 } 
+
+
 
 
 

@@ -14,6 +14,7 @@
   <!-- Länk till Javascript -->
   <script src="./js/toppnav.js"></script>
   <script src="./js/slider.js"></script>
+  <script src="./js/favbtn.js"></script>
 
   <!-- Länkar till extern CSS inkl fallback -->
   <link rel="stylesheet" href="./css/reset.css">
@@ -65,11 +66,13 @@
           <li><a href="#boka" title="Klicka för att komma till bokning">Boka behandling</a></li>
           <li><a href="#omoss" title="Klicka för att komma till om oss">Om oss</a></li>
           <li><a href="#kontakt" title="Klicka för kontakt">Kontakt</a></li>
+          <i><a href="javascript:void(0)"title="klicka för att lägga till bokmärke" onClick="return rudr_favorite(this);">Bokmärk sida</a></i>
         </ul>
 
         <a id="burgare" href="javascript:void(0);" title="Öppna mobilmeny för länkar" class="icon"
           onclick="myFunction()">
           <i class="fa fa-bars"></i>
+          
         </a>
       </nav>
 
@@ -88,6 +91,7 @@
               behandling</a></li>
           <li class="desktopA"><a class="eKnapp" href="#omoss" title="Klicka för att komma till om oss">Om oss</a></li>
           <li class="desktopA"><a class="eKnapp" href="#kontakt" title="Klicka för kontakt">Kontakt</a></li>
+          <i class="desktopA"><a class="eKnapp2" href="javascript:void(0)" title="klicka för att lägga till bokmärke" onClick="return rudr_favorite(this);">Bokmärk sida</a></i>
         </ul>
       </nav>
 
@@ -183,7 +187,7 @@
 
 
 
-    </main>
+   
 
     <!-- ========================== Massagebehandlingar ========================== -->
 
@@ -369,7 +373,7 @@
       </div>
     </section>
 
-
+  </main>
 
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
