@@ -111,18 +111,12 @@ textarea {
  
 }
 
-.subWrap {
+/* .subWrap {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap:5px;
-  
+} */
 
-
-}
-
-.box { 
-  margin:0.2rem;
-}
 
 
 .sidSektion {
@@ -641,6 +635,11 @@ input[type=submit]:hover {
   margin:0px;
 } */
 
+/* #erbjudandeSektion {
+  padding:0px;
+  margin:0px;
+} */
+
 .eRubrik {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
@@ -702,6 +701,12 @@ input[type=submit]:hover {
 /* ==================Ipad size och mindre================*/
 @media (min-width: 840px) 
 {
+
+.subWrap {
+  display:grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap:5px;
+} 
 
 
 #siteTop {
