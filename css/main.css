@@ -348,6 +348,16 @@ main {
   margin-left:2.3rem;
 }
 
+.kontaktBild {
+  width:30px;
+  height: 100%;
+}
+
+.kontaktLank {
+  color: #42851c;
+}
+
+
 /*======= Kontaktformulär ========*/
 
 #formWrap {
@@ -370,7 +380,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color:  #45a049;
+  background-color:  #42851c;;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
