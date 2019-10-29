@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.css">
 
-  <!-- Länk till hamburgarmenyn -->
+  <!-- Länk till CSS för hamburgarmenyn -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Ikoner placerade i root. Skapade med https://realfavicongenerator.net -->
@@ -72,7 +72,7 @@
         <a id="burgare" href="javascript:void(0);" title="Öppna mobilmeny för länkar" class="icon"
           onclick="myFunction()">
           <i class="fa fa-bars"></i>
-          
+
         </a>
       </nav>
 
@@ -108,7 +108,7 @@
     <main>
 
       <!--================== Slider ====================--->
-      <section id="mainSlider" class="box">
+      <section id="mainSlider">
         <h1 id="sliderRubrik" class="gronText">Välkommen till oss på JL Massage!</h1>
 
         <p id="sliderSlogan" class="gronText">Idrottsmassage och friskvård i Örebro</p>
@@ -149,12 +149,13 @@
 
       </section>
 
+      <section>
       <article>
         <h2 class="eRubrik">Populära behandlingar</h2>
 
         <div class="subWrap">
 
-          <section class="box erbjudande erbjudandeContainer" id="e1">
+          <section class="erbjudande erbjudandeContainer" id="e1">
             <h3 class="gronText arial">Raindropmassage</h3>
             <a href="#behandlingar" title="Länk till behandlingar"><img class="eBilder" src="./img/oljor.jpg"
                 alt="Eteriska oljor"></a>
@@ -163,7 +164,7 @@
             </p>
           </section>
 
-          <section class="box erbjudande erbjudandeContainer" id="e2">
+          <section class="erbjudande erbjudandeContainer" id="e2">
             <h3 class="gronText arial">Bindvävsmassage</h3>
             <a href="#behandlingar" title="Länk till behandlingar"><img class="eBilder" src="./img/bindvavsmassage.jpg"
                 alt="Bindvävsmassage"></a>
@@ -172,7 +173,7 @@
             </p>
           </section>
 
-          <section class="box erbjudande erbjudandeContainer" id="e3">
+          <section class="erbjudande erbjudandeContainer" id="e3">
             <h3 class="gronText arial">Helkroppsmassage</h3>
             <a href="#behandlingar" title="Länk till behandlingar"><img class="eBilder" src="./img/helkropp.jpg"
                 alt="Helkroppsmassage"></a>
@@ -182,12 +183,16 @@
           </section>
         </div>
       </article>
+    </section>
+
+
+     <!--================== Knapp för att nå sidans topp ====================--->
+
+
 
       <a class="buttonCenter tillTopp" href="#siteTop" title="Klicka för att komma till toppen av sidan">Till toppen</a>
 
 
-
-   
 
     <!-- ========================== Massagebehandlingar ========================== -->
 
@@ -291,7 +296,7 @@
           </figure>
         </article>
 
-      
+
 
     </section>
 
@@ -313,7 +318,7 @@
           <a class="kontaktLank" href="tel:+18506484200">850-648-4200</a>
           <br>
         </span>
-        
+
         <span>
           <img class="kontaktBild" src="./img/email.png" alt="Email ikon"> Mailaddress:<a class="kontaktLank" href="mailto:abc@example.com">jl@massage.com </a>
         </span>
@@ -378,6 +383,8 @@
     </section>
 
   </main>
+ </div>
+</body>
 
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
@@ -386,17 +393,5 @@
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-
-
-
-    <!-- ========================== Bort? ========================== -->
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
-    <script>
-      window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-      ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-    </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
-  </div>
-</body>
 
 </html>

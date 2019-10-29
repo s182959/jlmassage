@@ -108,12 +108,14 @@ textarea {
   margin:auto;
   max-width: 80rem;
  
+ 
 }
 
 .subWrap {
   display:grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap:5px;
+  
 
 
 }
@@ -133,6 +135,7 @@ textarea {
 
 main {
   margin-top:7rem;
+
 }
 
 
@@ -431,7 +434,7 @@ input[type=submit]:hover {
 
 
 .topnav {
-  max-width: 80rem;
+  /* max-width: 80rem; */
   overflow: hidden;
   background-color: rgb(77, 77, 77);
   position: relative;
@@ -649,7 +652,6 @@ input[type=submit]:hover {
 .erbjudande {
   text-align:center; 
 } 
-
 
 
 .eBilder {
