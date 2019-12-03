@@ -33,7 +33,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="##fafafa">
 
-
+  
 
 </head>
 
@@ -306,11 +306,12 @@
     <section class="sidSektion padding-top" id="kontakt">
       <h1 class="eRubrik">Kontakta oss</h1>
 
-      <div id="kartContainer">
+      <!-- Fick tyvärr kommentera bort kartfunktionen då den stör ut main.js av någon ogrundlig anledning. Google ads ger console error -->
+      <!-- <div id="kartContainer">
         <iframe id="karta" title="karta till oss"
           src="https://kartor.eniro.se/m/b25SJ?embed=true&center=59.24130782377387,15.279235839843748&zoom=10&layer=map">
         </iframe>
-      </div>
+      </div> -->
 
       <p class="pText arial bold kontakt">
         <span>
@@ -384,14 +385,22 @@
 
   </main>
  </div>
+ <script src="./js/vendor/modernizr-3.7.1.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+ <script src="./js/plugins.js"></script>
+ <script src="./js/main.js"></script>
 </body>
 
+
+
+<!-- script för sökmotoroptimering
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> -->
 
 
 </html>
