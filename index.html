@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="se">
+<html lang="se">
 
 <head>
   <meta charset="utf-8">
@@ -13,7 +13,6 @@
 
   <!-- Länk till Javascript -->
   <script src="./js/toppnav.js"></script>
-  <script src="./js/slider.js"></script>
   <script src="./js/favbtn.js"></script>
 
   <!-- Länkar till extern CSS inkl fallback -->
@@ -33,7 +32,7 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="##fafafa">
 
-
+  
 
 </head>
 
@@ -271,7 +270,7 @@
       <h1 class="eRubrik">Boka behandling</h1>
       <div id="bokaWrap">
       <!-- <iframe title="Boka din massagetider här" id="bokaSida" src="https://boka.se/wellnezz/info"></iframe> -->
-      <iframe id="bokaSida" title="Boka din massagetider här" src="https://boka.se/calendar/hhxjuzbf"></iframe>
+      <iframe id="bokaSida" title="Boka din massagetider här" src="https://boka.se/calendar/hhxjuzbf" data-cookieconsent="marketing"></iframe>
     </div>
     </section>
 
@@ -306,10 +305,15 @@
     <section class="sidSektion padding-top" id="kontakt">
       <h1 class="eRubrik">Kontakta oss</h1>
 
+      <!-- Fick tyvärr kommentera bort kartfunktionen då den stör ut main.js av någon ogrundlig anledning. Google ads ger console error -->
       <div id="kartContainer">
+        <!-- <iframe id="karta" title="karta till oss"
+          src="https://kartor.eniro.se/m/b25SJ?embed=true&center=59.24130782377387,15.279235839843748&zoom=10&layer=map" data-cookieconsent="marketing">
+        </iframe> -->
         <iframe id="karta" title="karta till oss"
-          src="https://kartor.eniro.se/m/b25SJ?embed=true&center=59.24130782377387,15.279235839843748&zoom=10&layer=map">
+          src="https://maps.google.com/maps?q=%C3%B6rebro&t=&z=13&ie=UTF8&iwloc=&output=embed" data-cookieconsent="marketing">
         </iframe>
+        
       </div>
 
       <p class="pText arial bold kontakt">
@@ -384,14 +388,23 @@
 
   </main>
  </div>
+ <script src="./js/vendor/modernizr-3.7.1.min.js"></script>
+ <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+ <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
+ <script src="./js/plugins.js"></script>
+ <script src="./js/main.js"></script>
+ <script src="./js/slider.js"></script>
 </body>
 
+
+
+<!-- script för sökmotoroptimering
     <script src="js/vendor/modernizr-3.7.1.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/main.js"></script> -->
 
 
 </html>
